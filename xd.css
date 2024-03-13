@@ -1,0 +1,49 @@
+#toggle{
+    position: absolute;
+    top: -2em;
+}
+nav .icon-bars{
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+nav .icon-bars .line{
+    width: 2em;
+    height: .3em;
+    background-color: rgb(122, 119, 126);
+    margin: .8em;
+    border-radius: 1em;
+    transition: all .3s ease-in-out;
+}
+nav .logo{
+    float: none;
+    width: auto;
+    justify-content: center;
+}
+nav .list{
+    float: none;
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    top: 8em;
+    bottom: 100%;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(135, 137, 146, 0.8);
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+}
+nav .list a{
+    font-size: 1.7em;
+}
+nav :checked ~ .list{
+    bottom: 0;
+
+}
+nav .icon-bars{
+    display: block;
+}
